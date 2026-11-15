@@ -1,0 +1,194 @@
+
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7f2;
+    color: #26352b;
+    line-height: 1.7;
+}
+
+/* HEADER */
+header {
+    background: #123c2a;
+    color: white;
+    padding: 15px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    background: white;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.logo h2 {
+    font-size: 19px;
+}
+
+.logo p {
+    font-size: 12px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #c4df83;
+}
+
+/* HERO SECTION */
+.hero {
+    min-height: 530px;
+    background:
+        linear-gradient(rgba(9, 35, 22, 0.78),
+        rgba(9, 35, 22, 0.78)),
+        url("https://images.unsplash.com/photo-1511497584788-876760111969")
+        center/cover;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.welcome {
+    color: #c4df83;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.explore-btn {
+    display: inline-block;
+    background: #b2d46a;
+    color: #173923;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.explore-btn:hover {
+    background: white;
+}
+
+/* GENERAL SECTIONS */
+.section {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 30px;
+    color: #17452e;
+    margin-bottom: 20px;
+}
+
+.section > p {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* SNAKE GALLERY */
+.snake-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+}
+
+/* AUTHOR */
+.author {
+    background: #e6eee3;
+}
+
+.author img {
+    width: 170px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 15px auto;
+}
+
+.author h3 {
+    color: #17452e;
+    font-size: 23px;
+}
+
+/* FOOTER */
+footer {
+    background: #123c2a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .section {
+        padding: 45px 5%;
+    }
+}
